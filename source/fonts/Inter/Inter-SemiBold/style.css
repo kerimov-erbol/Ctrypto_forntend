@@ -1,0 +1,22 @@
+/********************************************
+Сгенерированно в Quick Site Upgrade
+https://quick-site-upgrade.com/tools/web-font-optimizer
+********************************************/
+@font-face {
+    font-family: 'inter-semibold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('inter-semibold-russian.woff2') format('woff2'),
+        url('inter-semibold-russian.woff') format('woff'),
+        url('inter-semibold-russian.ttf') format('truetype');
+    unicode-range: ;
+}
+@font-face {
+    font-family: 'inter-semibold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('inter-semibold-english.woff2') format('woff2'),
+        url('inter-semibold-english.woff') format('woff'),
+        url('inter-semibold-english.ttf') format('truetype');
+    unicode-range: ;
+}

@@ -1,0 +1,13 @@
+@use "../abstract-index" as *;
+
+
+.header{
+
+}
+
+
+@include for-mobile{
+     .header{
+        
+    }
+}

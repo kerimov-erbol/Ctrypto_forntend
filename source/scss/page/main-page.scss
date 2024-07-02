@@ -1,0 +1,60 @@
+@use "../abstract-index" as *;
+
+.main-page{
+     max-width: 1300px;
+     min-width: 330px;
+     margin: 0 auto;
+     background-color: #ffffff;
+
+
+}
+
+.text{
+    font-family: 'Abhaya Libre';
+    font-weight: 600;
+    font-size: 90px;
+}
+
+
+.text2{
+    font-family: 'Abhaya Libre';
+    font-weight:500;
+    font-size: 90px;
+}
+
+
+
+
+.visby-cf-medium{
+    font-family: 'VisbyCF Bold';
+
+}
+.visby-cf-medium-abeque{
+    font-family: 'VisbyCF DemiBold';
+
+}
+.visby-cf-regular{
+    font-family: "VisbyCF Ligh";
+
+}
+.visby-cf-demibold{
+
+    font-family: "VisbyCF Medium";
+}
+.visby-cf-bold{
+    font-family: "VisbyCF MediumOblique";
+
+}
+
+
+
+@include for-mobile{
+     .main-page{
+          max-width: 990px;
+          min-width: 330px;
+          margin: 0 auto;
+
+     }
+     
+
+}

@@ -1,0 +1,22 @@
+/********************************************
+Сгенерированно в Quick Site Upgrade
+https://quick-site-upgrade.com/tools/web-font-optimizer
+********************************************/
+@font-face {
+    font-family: 'sfmonoregular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('sfmonoregular-russian.woff2') format('woff2'),
+        url('sfmonoregular-russian.woff') format('woff'),
+        url('sfmonoregular-russian.ttf') format('truetype');
+    unicode-range: ;
+}
+@font-face {
+    font-family: 'sfmonoregular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('sfmonoregular-english.woff2') format('woff2'),
+        url('sfmonoregular-english.woff') format('woff'),
+        url('sfmonoregular-english.ttf') format('truetype');
+    unicode-range: ;
+}

@@ -1,0 +1,22 @@
+/********************************************
+Сгенерированно в Quick Site Upgrade
+https://quick-site-upgrade.com/tools/web-font-optimizer
+********************************************/
+@font-face {
+    font-family: 'sfprotext-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('sfprotext-regular-russian.woff2') format('woff2'),
+        url('sfprotext-regular-russian.woff') format('woff'),
+        url('sfprotext-regular-russian.ttf') format('truetype');
+    unicode-range: ;
+}
+@font-face {
+    font-family: 'sfprotext-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('sfprotext-regular-english.woff2') format('woff2'),
+        url('sfprotext-regular-english.woff') format('woff'),
+        url('sfprotext-regular-english.ttf') format('truetype');
+    unicode-range: ;
+}

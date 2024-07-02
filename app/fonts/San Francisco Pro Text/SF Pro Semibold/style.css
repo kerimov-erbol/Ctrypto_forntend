@@ -1,0 +1,22 @@
+/********************************************
+Сгенерированно в Quick Site Upgrade
+https://quick-site-upgrade.com/tools/web-font-optimizer
+********************************************/
+@font-face {
+    font-family: 'sfprotext-semibold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('sfprotext-semibold-russian.woff2') format('woff2'),
+        url('sfprotext-semibold-russian.woff') format('woff'),
+        url('sfprotext-semibold-russian.ttf') format('truetype');
+    unicode-range: ;
+}
+@font-face {
+    font-family: 'sfprotext-semibold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('sfprotext-semibold-english.woff2') format('woff2'),
+        url('sfprotext-semibold-english.woff') format('woff'),
+        url('sfprotext-semibold-english.ttf') format('truetype');
+    unicode-range: ;
+}

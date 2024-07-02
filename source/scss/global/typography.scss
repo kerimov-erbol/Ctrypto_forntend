@@ -1,0 +1,51 @@
+/* здесь подключите шрифты*/
+
+
+// Examlple
+
+// @font-face {
+//     font-family: 'FONT FAMILY NAME';
+//         src:local('SF Mono Regular'),
+//         url('../../fonts/') format('woff2'),
+//         url('../../fonts/') format('woff'),
+//         url(../../fonts/AbhayaLibre-Medium.ttf) format("ttf");
+//     font-weight: 200/300/400/500/600/700/800/900;
+//     font-style: normal/italic/obisue;
+//     font-display: swap;
+// }
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/Inter/Inter-Regular/inter-regular-english.woff2') format('woff2'),
+        url('../../fonts/Inter/Inter-Regular/inter-regular-english.woff') format('woff'),
+        url('../../fonts/Inter/Inter-Regular/inter-regular-english.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../fonts/Inter/Inter-Medium/inter-medium-english.woff2') format('woff2'),
+        url('../../fonts/Inter/Inter-Medium/inter-medium-english.woff') format('woff'),
+        url('../../fonts/Inter/Inter-Medium/inter-medium-english.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../fonts/Inter/Inter-SemiBold/inter-semibold-english.woff2') format('woff2'),
+        url('../../fonts/Inter/Inter-SemiBold/inter-semibold-english.woff') format('woff'),
+        url('../../fonts/Inter/Inter-SemiBold/inter-semibold-english.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../fonts/Inter/Inter-Bold/inter-bold-english.woff2') format('woff2'),
+        url('../../fonts/Inter/Inter-Bold/inter-bold-english.woff') format('woff'),
+        url('../../fonts/Inter/Inter-Bold/inter-bold-english.ttf') format('truetype');
+}
+
+

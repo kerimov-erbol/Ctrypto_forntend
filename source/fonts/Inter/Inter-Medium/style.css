@@ -1,0 +1,22 @@
+/********************************************
+Сгенерированно в Quick Site Upgrade
+https://quick-site-upgrade.com/tools/web-font-optimizer
+********************************************/
+@font-face {
+    font-family: 'inter-medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url('inter-medium-russian.woff2') format('woff2'),
+        url('inter-medium-russian.woff') format('woff'),
+        url('inter-medium-russian.ttf') format('truetype');
+    unicode-range: ;
+}
+@font-face {
+    font-family: 'inter-medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url('inter-medium-english.woff2') format('woff2'),
+        url('inter-medium-english.woff') format('woff'),
+        url('inter-medium-english.ttf') format('truetype');
+    unicode-range: ;
+}

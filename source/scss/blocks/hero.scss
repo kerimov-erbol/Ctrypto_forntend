@@ -1,0 +1,27 @@
+@use "../abstract-index" as *;
+.hero{
+    height: 500px;
+    background-color: aquamarine;
+    &__container{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+    &__info{
+        width: 692px;
+        outline: 1px solid black;
+    }
+    &__screenshot{
+        width: 488px;
+        outline: 1px solid black;
+    }
+
+
+
+}
+
+
+@include for-mobile{
+
+}
