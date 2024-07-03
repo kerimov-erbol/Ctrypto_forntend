@@ -42,7 +42,9 @@ import {deleteAsync} from 'del'
 // import squoosh from 'gulp-libsquoosh';
 
 // import svgo from 'gulp-svgmin';
+
 // import { stacksvg } from "gulp-stacksvg";
+
 // import bemlinter from 'gulp-html-bemlinter';
 // import { htmlValidator } from "gulp-w3c-html-validator";
 
@@ -73,7 +75,7 @@ export function processStyles(){
     .pipe(postcss([
         postUrl({ assetsPath: '../' }),
         autoprefixer(),
-        csso()
+        // csso()
     ]))
     .pipe(gulp.dest('app/css/', { sourcemaps: isDevelopment }))
     .pipe(browser.stream());
@@ -89,7 +91,7 @@ export function processFonts () {
 
 // !!!!!!!!! читать 3.2 Readme
 export function processImages() {
-    return gulp.src(['source/img/*.{jpg,jpeg,png,svg}'],{ encoding: false })
+    return gulp.src(['source/img/**/*.{jpg,jpeg,png,svg,webp}'],{ encoding: false })
     .pipe(gulp.dest('app/img'));
 }
 
@@ -150,7 +152,7 @@ function reloadServer (done) {
 function watchFiles () {
     gulp.watch('source/scss/**/*.scss', gulp.series(processStyles));
     gulp.watch('source/js/*.js', gulp.series(processScripts));
-    gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
+    gulp.watch('source/*.html', gulp.series(processMarkup,processImages,reloadServer));
 }
 
 //-------------------------------CompileProject-------------------------------

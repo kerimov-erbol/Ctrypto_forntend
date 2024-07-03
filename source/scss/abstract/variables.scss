@@ -20,7 +20,8 @@ $white-80-color:rgba(255, 255, 255, 0.8);
 $blue: #41a4df;
 $dark-blue: #232328;
 $deep-blue: #287de2;
-$blue_16: #41a4df33;
+$blue_12: rgba(65, 164, 223, 0.12);
+$blue_16: rgba(65, 164, 223, 0.16);
 
 
 $dark: #0d0d12;
@@ -39,6 +40,8 @@ $bg-light: #f7f9fb;
 $bg-dark: #18181d;
 
 
+
+
 // $gradient-blue: support only solid color;
 // $bg-dark_border: support only solid color;
 // $bg-pink: support only solid color;
@@ -48,56 +51,8 @@ $bg-dark: #18181d;
 // $bg-gray: support only solid color;
 
 
+/*text style*/ 
+
+  
 
 
-@mixin fluster-linear-gradient($direction, $color-left, $color-right) {
-    background: $color-right;
-    background: -webkit-linear-gradient($direction, $color-left, $color-right);
-    background: -moz-linear-gradient($direction, $color-left, $color-right);
-    background: -o-linear-gradient($direction, $color-left, $color-right);
-    background: linear-gradient($direction, $color-left, $color-right);
-}
-
-
-
-// @mixin fluster-linear-gradient-variable($direction, $color-left, $color-right) {
-//     --background: #{$color-right};
-//     --background: -webkit-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background: -moz-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background: -o-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background: linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-// }
-
-// @mixin fluster-linear-gradient-variable-activated($direction, $color-left, $color-right) {
-//     --background-activated: #{$color-right};
-//     --background-activated: -webkit-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background-activated: -moz-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background-activated: -o-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background-activated: linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-// }
-
-// @mixin fluster-linear-gradient-variable-checked($direction, $color-left, $color-right) {
-//     --background-checked: #{$color-right};
-//     --background-checked: -webkit-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background-checked: -moz-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background-checked: -o-linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-//     --background-checked: linear-gradient(#{$direction}, #{$color-left}, #{$color-right});
-// }
-
-
-
-
-
-
-
-
-
-
-// COLORS
-
-
-
-// FONT SIZES
-$font-primary: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-// TUYPE FACE

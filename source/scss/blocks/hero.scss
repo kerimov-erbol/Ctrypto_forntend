@@ -1,21 +1,74 @@
 @use "../abstract-index" as *;
 .hero{
-    height: 500px;
-    background-color: aquamarine;
+
     &__container{
+        height: 740px;
         width: 1200px;
         margin: 0 auto;
         display: flex;
-        
+        justify-content: space-between;
+        align-items: center; 
     }
+// 
     &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
         width: 692px;
-        outline: 1px solid black;
     }
+
+    &__description-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__heading{
+        @include desktop-h1-header;
+    }
+    &__heading-acent{
+        color:$blue;
+    }
+    &__description{
+        @include desktop-base-text
+    }
+    &__btn{
+        width: 196px;
+        height: 60px;
+        @include desktop-button;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue;
+        border-radius: 900px;
+    }
+    &__crypto-bot-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+   
+   
+    &__bot-list{
+
+    }
+   
+
+
+
+
+    &__crypto-info{
+        @include desktop-base-text
+    }
+
+// 
     &__screenshot{
         width: 488px;
-        outline: 1px solid black;
+        padding-left: 61px;
+
     }
+
+
 
 
 
@@ -25,3 +78,6 @@
 @include for-mobile{
 
 }
+
+
+

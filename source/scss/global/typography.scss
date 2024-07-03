@@ -1,51 +1,107 @@
-/* здесь подключите шрифты*/
-
-
-// Examlple
-
-// @font-face {
-//     font-family: 'FONT FAMILY NAME';
-//         src:local('SF Mono Regular'),
-//         url('../../fonts/') format('woff2'),
-//         url('../../fonts/') format('woff'),
-//         url(../../fonts/AbhayaLibre-Medium.ttf) format("ttf");
-//     font-weight: 200/300/400/500/600/700/800/900;
-//     font-style: normal/italic/obisue;
-//     font-display: swap;
-// }
-
+// SF Mono
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'SFMono';
+    src: local('SFMono Regular'), local('SFMono-Regular'),
+        url('../../fonts/SfMono/subset-SFMono-Regular.woff2') format('woff2'),
+        url('../../fonts/SfMono/subset-SFMono-Regular.woff') format('woff'),
+        url('../../fonts/SfMono/subset-SFMono-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url('../../fonts/Inter/Inter-Regular/inter-regular-english.woff2') format('woff2'),
-        url('../../fonts/Inter/Inter-Regular/inter-regular-english.woff') format('woff'),
-        url('../../fonts/Inter/Inter-Regular/inter-regular-english.ttf') format('truetype');
+    font-display: swap;
 }
+
+// SF Pro
+
 @font-face {
-    font-family: 'Inter';
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Bold'), local('SFProDisplay-Bold'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Bold.woff2') format('woff2'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Bold.woff') format('woff'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Medium'), local('SFProDisplay-Medium'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Medium.woff2') format('woff2'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Medium.woff') format('woff'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
-    src: url('../../fonts/Inter/Inter-Medium/inter-medium-english.woff2') format('woff2'),
-        url('../../fonts/Inter/Inter-Medium/inter-medium-english.woff') format('woff'),
-        url('../../fonts/Inter/Inter-Medium/inter-medium-english.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Inter';
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Regular.woff') format('woff'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Semibold'), local('SFProDisplay-Semibold'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Semibold.woff') format('woff'),
+        url('../../fonts/SfPro/subset-SFProDisplay-Semibold.ttf') format('truetype');
     font-weight: 600;
-    src: url('../../fonts/Inter/Inter-SemiBold/inter-semibold-english.woff2') format('woff2'),
-        url('../../fonts/Inter/Inter-SemiBold/inter-semibold-english.woff') format('woff'),
-        url('../../fonts/Inter/Inter-SemiBold/inter-semibold-english.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
 }
+
+
+
+// Inter
 @font-face {
     font-family: 'Inter';
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../../fonts/Inter/subset-Inter-Bold.woff2') format('woff2'),
+        url('../../fonts/Inter/subset-Inter-Bold.woff') format('woff'),
+        url('../../fonts/Inter/subset-Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-    font-weight: 700;
-    src: url('../../fonts/Inter/Inter-Bold/inter-bold-english.woff2') format('woff2'),
-        url('../../fonts/Inter/Inter-Bold/inter-bold-english.woff') format('woff'),
-        url('../../fonts/Inter/Inter-Bold/inter-bold-english.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../../fonts/Inter/subset-Inter-Medium.woff2') format('woff2'),
+        url('../../fonts/Inter/subset-Inter-Medium.woff') format('woff'),
+        url('../../fonts/Inter/subset-Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('../../fonts/Inter/subset-Inter-Regular.woff2') format('woff2'),
+        url('../../fonts/Inter/subset-Inter-Regular.woff') format('woff'),
+        url('../../fonts/Inter/subset-Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+        url('../../fonts/Inter/subset-Inter-SemiBold.woff2') format('woff2'),
+        url('../../fonts/Inter/subset-Inter-SemiBold.woff') format('woff'),
+        url('../../fonts/Inter/subset-Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 
