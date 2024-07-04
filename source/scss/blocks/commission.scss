@@ -1,0 +1,83 @@
+@use "../abstract-index" as *;
+.commission{
+    padding: 42px 56px;
+    border-radius: 40px;
+    background-color: $bg-light;
+    &__btn-wrapper{
+        padding: 37px 76px;
+        position: relative;
+    }
+    &__btn{
+        width: 223px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 17px;
+        background-color: #81b4ed5a;
+        @include desktop-button
+        
+        
+
+    }
+    &__cursor{
+        z-index: 1;
+        position: absolute;
+        top: 120px;
+        right: 1px;
+    }
+    &__heading{
+        @include desktop-h3-header;
+        margin-bottom: 20px;
+
+    }
+    &__descrtiptin{
+        @include desktop-base-text
+    
+    }
+
+}
+@keyframes cursor-animation {
+    0%, 100% {
+        transform: translate(0px,0px);
+      }
+      40% {
+        transform: translate(-65px,-55px);
+      }
+      60% {
+        transform: translate(-65px,-55px);
+      }
+     100% {
+        transform: translate(0px,0px);
+      }
+}
+@keyframes button-animation {
+    0%,43%{
+        transform: scale(1);
+        background-color: #81b4ed5a;
+      }
+      45% {
+        transform: scale(1.05);
+        background-color: #448bdc5a;
+        
+      }
+      60% {
+        transform: scale(1.05);
+        background-color: #448bdc5a;
+      }
+     61%,100% {
+        background-color: #81b4ed5a;
+        transform: scale(1);
+      }
+}
+    
+.animate-coursor {
+    animation: cursor-animation 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.animate-button {
+    animation: button-animation 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
