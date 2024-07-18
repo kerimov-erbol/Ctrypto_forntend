@@ -1,8 +1,16 @@
 @use "../abstract-index" as *;
-.stat{
+.verification{
     padding: 42px 56px;
-    border-radius: 32px;
+    padding-top: 0px;
+    border-radius: 40px;
     background-color: $bg-light;
+
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px
+    }
     &__heading{
         
         @include desktop-h3-header;
@@ -18,11 +26,12 @@
 }
 
 
+
 @include for-mobile{
-    .stat{
+    .verification{
         padding: 32px;
-        border-radius: 32px;
-        background-color: $bg-light;
+        padding-top: 0px;
+
         
         &__heading{
             @include mobile-h3-header;
@@ -33,13 +42,12 @@
             @include mobile-base-text
         
         }
-        &__demo img{
-            width: 271px;
-            height: 260px;
+        &__img img{
+            width: 247px;
+            height: 194px;
         }
     
     }
 
 }
-
 

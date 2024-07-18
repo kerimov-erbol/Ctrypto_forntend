@@ -1,2 +1,160 @@
 @use "../abstract-index" as *;
 .exchage{
+    padding: 42px 56px;
+    border-radius: 32px;
+    background-color: $bg-light;
+
+
+    &__demo{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__wrapper{
+        position: relative;
+        width: 276px;
+        height: 96px;
+    }
+    &__coin{
+        position: absolute;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 98px;
+        height: 98px;
+    }
+    &__first{
+
+
+    }
+    &__second{
+        left: 34px;
+
+    }
+    &__third{
+       
+        left: 68px;
+
+    }
+    &__usd{
+        position: absolute;
+        right: 1px;
+    }
+    &__decoration{
+        position: absolute;
+        width: 34px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19px;
+        border: 1px solid #ffffffb2;
+        left: 155px;
+        top:35px;
+        z-index: 4;
+        background-color: #ffffffb2
+    }
+
+    
+    &__heading{
+        @include desktop-h3-header;
+        margin-bottom: 20px;
+
+    }
+    &__descrtiptin{
+        @include desktop-base-text
+    
+    }
+}
+
+
+@include for-mobile{
+    .exchage{
+        padding: 32px;
+        &__heading{
+            @include mobile-h3-header;
+            margin-bottom: 20px;
+    
+        }
+        &__descrtiptin{
+            @include mobile-base-text
+        
+        }
+      
+    
+    }
+    
+}
+
+
+@keyframes exchane-animation_first {
+    0%,100% {
+        z-index: 1;
+        transform: translate(0px);
+    }
+    33% {
+        z-index: 2;
+        transform: translate(34px);
+    }
+    66% {
+        z-index: 3;
+        transform: translate(68px);
+    }
+    67% {
+        z-index: 0;
+    }
+
+}
+
+.animate-exchane-1 {
+    animation: exchane-animation_first 2s linear forwards;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+
+}
+
+@keyframes exchane-animation_second {
+    0%,100% {
+        z-index: 2;
+        transform: translate(0px);
+    }
+    33% {z-index: 3;
+        transform: translate(34px);
+    }
+    34% {z-index: 0;
+    }
+    66% {z-index: 1;
+        transform: translate(-34px);
+    }
+    
+}
+
+.animate-exchane-2 {
+    animation: exchane-animation_second 2s linear forwards;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+}
+@keyframes exchane-animation_third {
+    0%,100% {z-index: 3;
+        transform: translate(0px);
+    }
+    1% {z-index: 0;
+    }
+    33% {z-index: 1;
+        transform: translate(-68px);
+    }
+    66% {z-index: 2;
+        transform: translate(-34px);
+    }
+}
+
+.animate-exchane-3 {
+    animation: exchane-animation_third 2s linear forwards;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+}

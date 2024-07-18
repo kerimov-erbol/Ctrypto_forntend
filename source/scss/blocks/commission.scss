@@ -38,6 +38,30 @@
     }
 
 }
+
+
+
+@include for-mobile{
+    .commission{
+        padding: 32px;
+        &__heading{
+            @include mobile-h3-header;
+            margin-bottom: 20px;
+    
+        }
+        &__descrtiptin{
+            @include mobile-base-text
+        
+        }
+        &__btn-wrapper{
+            padding: 27px 23px;
+            position: relative;
+        }
+      
+    
+    }
+    
+}
 @keyframes cursor-animation {
     0%, 100% {
         transform: translate(0px,0px);
@@ -75,9 +99,11 @@
 .animate-coursor {
     animation: cursor-animation 3s ease-in-out forwards;
     animation-delay: 0.5s;
+    animation-iteration-count: 2;
 }
 
 .animate-button {
     animation: button-animation 3s ease-in-out forwards;
     animation-delay: 0.5s;
+    animation-iteration-count: 2;
 }

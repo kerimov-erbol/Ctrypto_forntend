@@ -1,4 +1,7 @@
 /* здесь используйте глобальные переменные */
+$backg: #404040;
+$cultured: #f5f5f5;
+
 
 
 $blue-color:#41A4DF;
@@ -35,11 +38,10 @@ $white-24: #ffffff33;
 $white-60: #ffffff99;
 $white-80: #ffffffcc;
 
+$bg-light: var(--feature-bg);
+// $bg-dark: var(--feature-bg);
 
-$bg-light: #f7f9fb;
-$bg-dark: #18181d;
-
-
+$red: #db0909cc;
 
 
 // $gradient-blue: support only solid color;

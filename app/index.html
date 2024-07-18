@@ -13,7 +13,7 @@
                 <div class="header__container">
 
                     <div class="header__logo">
-                        <img width="64px" height="64px" src="img/logo/desktop-logo.svg" alt="">
+                        <img class="header__logo-img"  width="64px" height="64px" src="img/logo/desktop-logo.svg" alt="">
                     </div>
 
                     <nav class="header__navigaiton">
@@ -37,7 +37,7 @@
                     </nav>
                     <div class="header__btn-list">
                         <div class="header__theme-toggle">
-                            <img width="30px" height="30px" src="img/theme/mode-light.svg" alt="">
+                            <img class="header__theme-toggle-img" width="30px" height="30px" src="img/theme/mode-light.svg" alt="">
                         </div>
                         <div class="header__start-btn">
                             <a href="#">Get started</a>
@@ -70,7 +70,7 @@
                             <div class="hero__crypto-bot-wrapper">
 
                                 <div class="hero__bot-list">
-                                   <img width="368px" height="96px" src="img/theme/coin/photo-bots-ligh.png" alt="">
+                                   <!-- <img width="368px" height="96px" src="img/theme/coin/photo-bots-ligh.png" alt=""> -->
                                 </div>
                                 
                                 <div class="hero__crypto-info">
@@ -82,7 +82,7 @@
                         </div>
                         
                         <div class="hero__screenshot">
-                            <img height="688px" width="328px" src="img/theme/hero-phone-light.png" alt="">
+                            <img class="hero__screenshot-img" height="688px" width="328px" src="img/theme/hero-phone-light.png" alt="">
                         </div>
 
                     </div>
@@ -91,6 +91,20 @@
 
                 <div class="use-case">
                     <div class="use-case__container">
+                        <div class="slide-list">
+                            <div class="slide-item">
+                                slide 1
+
+                            </div>
+                            <div class="slide-item">
+                                slide 2
+
+                            </div>
+                            <div class="slide-item">
+                                slide 3
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -204,43 +218,100 @@
 
                         </div>
                         <div class="features__exchage exchage">
-                            
-                        </div>
-                        <div class="features__stat stat">
-                            <div class="stat__demo">
+                            <div class="exchage__demo">
+                                <div class="exchage__wrapper">
 
-                                <img width="580px" height="526px" src="img/img_commission.png" alt="">
+                                    <div class="exchage__coin exchage__first" data-position="1" >
+                                        <img width="96px" height="96px" src="img/coins/TON.svg" alt="">
+                                    </div>
 
+                                     <div class="exchage__coin exchage__second" data-position="2" >
+                                        <img width="96px" height="96px" src="img/coins/BTC.svg" alt="" >
+                                    </div>
+
+                                    <div class="exchage__coin exchage__third" data-position="3">
+                                        <img width="96px" height="96px" src="img/coins/USDT.svg" alt="">
+                                    </div>
+                                     
+                                    
+                                   
+                                    <div class="exchage__decoration">
+                                        <img width="19px" src="img/arrow.svg" alt="">
+                                    </div>
+
+                                    <img width="96px" height="96px" src="img/coins/USD.svg" alt="" class="exchage__usd">
+                                </div>
                             </div>
-                            <div class="stat__info">
-                                <p class="stat__heading">
+                            <div class="exchage__info">
+                                <p class="exchage__heading">
                                     One click to start
                                 </p>
-                                <p class="stat__descrtiptin">
+                                <p class="exchage__descrtiptin">
                                     Open <span class="text-blue-acent">@CryptoBot</span>, go to <span class="text-blue-acent">Crypto Pay </span> and tap Create App to get API Token
                                 </p>
                             </div>
                         </div>
+                        <div class="features__stat stat">
+                            <div class="stat__demo">
+
+                                <!-- <img width="580px" height="526px" src="img/img_commission1.png" alt=""> -->
+
+                            </div>
+                            <div class="stat__info">
+                                <p class="stat__heading">
+                                    Payment statistics
+                                </p>
+                                <p class="stat__descrtiptin">
+                                    Open <span class="text-blue-acent">@CryptoBot</span> go to <span class="text-blue-acent">Crypto Pay </span>and 
+                                    <span class="text-blue-acent">My Apps</span>,<br> App Name to get Statistics
+                                
+                                </p>
+                            </div>
+                        </div>
+
                         <div class="features__verification verification">
-                            
+                            <div class="verification__img">
+                                <!-- <img height="360px" width="461px" src="img/theme/Body-light.png" alt=""> -->
+                            </div>
+                            <div class="verification__info">
+                                <p class="verification__heading">
+                                   Send coins to users
+                                </p>
+                                <p class="verification__descrtiptin">
+                                    Automate payouts to users with <span class="text-blue-acent">transfer</span> transfer API method
+                        
+                                </p>
+                            </div>          
                         </div>
                         <div class="features__anon anon">
+                            <div class="anon__img">
+                                <!-- <img height="222px" width="404px" src="img/img_commission.png" alt=""> -->
+                            </div>
+                            <div class="anon__info">
+                                <p class="anon__heading">
+                                    Anonymous payments
+                                </p>
+                                <p class="anon__descrtiptin">
+                                    Use allow_anonymous parameterin createInvoice method to give useran option to remain private
+                        
+                                </p>
+                            </div>    
                             
                         </div>
                     </div>
                 </div>
 
-                <div class="use-case">
-                    <div class="use-case__container">
 
-                    </div>
-                </div>
 
-                <div class="use-case">
-                    <div class="use-case__container">
 
-                    </div>
-                </div>
+
+
+
+
+
+
+                
+    
 
             </main>
 

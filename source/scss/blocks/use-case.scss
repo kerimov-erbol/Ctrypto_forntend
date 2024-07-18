@@ -1,0 +1,30 @@
+@use "../abstract-index" as *;
+
+
+.use-case{
+    margin-bottom: 120px;
+    background-color: $dark-blue;
+    
+    &__container{
+        height: 880px;
+        width: 1200px;
+        margin: 0 auto;
+    
+    }
+
+}
+
+
+@include for-mobile{
+    .use-case{
+        
+        &__container{
+            width: 335px;
+            margin: 0 auto;
+        
+        }
+    
+    }
+
+}
+

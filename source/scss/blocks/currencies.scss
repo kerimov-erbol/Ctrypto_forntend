@@ -34,6 +34,39 @@
 
 }
 
+@include for-mobile{
+    .currencies{
+        padding: 32px;
+      
+        &__heading{
+            @include mobile-h3-header;
+            margin-bottom: 20px;
+    
+        }
+        &__descrtiptin{
+            @include mobile-base-text
+        
+        }
+    }
+    
+}
+
+
+@include for-mobile{
+    .currencies{
+        padding: 32px;
+            &__img{
+                width: 56px;
+                height: 56px;
+            }
+            &__list{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+}
+// 56
+
 
 
 
@@ -48,6 +81,7 @@
   
   .animate {
     animation: growAndShrink 1s ease-in-out forwards;
+    
   }
   
 

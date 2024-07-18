@@ -1,8 +1,9 @@
 @use "../abstract-index" as *;
 .hero{
+    padding-top: 20px;
+    padding-bottom: 120px;
 
     &__container{
-        height: 740px;
         width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -14,7 +15,7 @@
         display: flex;
         flex-direction: column;
         gap: 56px;
-        width: 692px;
+        max-width: 692px;
     }
 
     &__description-wrapper{
@@ -63,7 +64,8 @@
 
 // 
     &__screenshot{
-        width: 488px;
+        max-width: 488px;
+        height: fit-content;
         padding-left: 61px;
 
     }
@@ -76,7 +78,46 @@
 
 
 @include for-mobile{
+    .hero{
+        &__container{
+            width: 335px;
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__description-wrapper{
+            text-align: center;
+            gap: 32px;
+        }
+        &__heading{
+            @include mobile-h1-header;
+        }
+        &__btn{
+            width: 163px;
+            height: 46px;
+            align-self: center;
+            @include mobile-button;
+        }
+        &__crypto-bot-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__bot-list img{
+            width: 251px;
+            height: 63px;
 
+        }
+        &__screenshot{
+            height: fit-content;
+            padding-left: 0px;
+    
+        }
+        &__screenshot-img{
+            width: 302px;
+            height: 635px;
+           
+        }
+    }
 }
 
 

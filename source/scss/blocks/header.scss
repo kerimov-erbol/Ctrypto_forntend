@@ -23,6 +23,7 @@
     }
     &__link{
         @include desktop-button;
+        color: var(--text-color)
     }
     &__btn-list{
         width: 250px;
@@ -31,6 +32,11 @@
         gap: 32px;
         
 
+    }
+    &__theme-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__start-btn{
         width: 193px;
@@ -45,8 +51,8 @@
         
     }
     &__start-btn a{
-    
         color: $deep-blue;
+        
     }
 
 }
@@ -59,6 +65,10 @@
 
         }
         &__logo{
+        }
+        &__logo-img{
+            width: 46px;
+            height: 46px;
         }
         &__navigaiton{
             display: none;
@@ -73,6 +83,8 @@
     
         }
         &__start-btn{
+            width: 163px;
+            height: 46px;
 
         }
         

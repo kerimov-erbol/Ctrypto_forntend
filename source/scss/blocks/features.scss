@@ -1,5 +1,6 @@
 @use "../abstract-index" as *;
 .features{
+    padding-bottom:  120px;
 
     &__container{
         width: 1200px;
@@ -26,29 +27,21 @@
 
     }
     &__exchage{
-        padding: 42px 56px;
-        border-radius: 32px;
-        background-color: $bg-light;
+      
         grid-area: 3/1/4/2;
     }
     &__stat{
-        padding: 42px 56px;
-        border-radius: 32px;
-        background-color: $bg-light;
+  
         grid-area: 2/2/4/4;
 
     }
     &__verification{
-        padding: 42px 56px;
-        border-radius: 40px;
-        background-color: $bg-light;
+
         grid-area: 4/1/5/3;
 
     }
     &__anon{
-        padding: 42px 56px;
-        border-radius: 32px;
-        background-color: $bg-light;
+
         grid-area: 4/3/5/4;
 
     }
@@ -57,8 +50,51 @@
 }
 
 @include for-mobile{
+    .features{
+    &__container{
+        width: 335px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        &__currencies{
+            grid-area: 1/1/2/4;
+            padding: 32px;
+        
+    
+        }
+        &__commission{
 
+            grid-area: 2/1/3/2;
+    
+        }
+        &__exchage{
+       
+          
+            grid-area: 3/1/4/2;
+        }
+        &__stat{
+   
+      
+            grid-area: 2/2/4/4;
+    
+        }
+        &__verification{
+
+            grid-area: 4/1/5/3;
+    
+        }
+        &__anon{
+
+            grid-area: 4/3/5/4;
+    
+        }
+       
+        
+    }
 }
 
+
+
+}
 
 

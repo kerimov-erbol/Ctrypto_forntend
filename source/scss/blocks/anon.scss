@@ -1,5 +1,5 @@
 @use "../abstract-index" as *;
-.stat{
+.anon{
     padding: 42px 56px;
     border-radius: 32px;
     background-color: $bg-light;
@@ -16,30 +16,23 @@
     }
 
 }
-
-
 @include for-mobile{
-    .stat{
+    .anon{
         padding: 32px;
-        border-radius: 32px;
-        background-color: $bg-light;
-        
         &__heading{
             @include mobile-h3-header;
             margin-bottom: 20px;
-        
+    
         }
         &__descrtiptin{
             @include mobile-base-text
         
         }
-        &__demo img{
+        &__img img{
             width: 271px;
-            height: 260px;
+            height: 130px;
         }
     
     }
-
+    
 }
-
-
